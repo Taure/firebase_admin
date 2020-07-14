@@ -1,5 +1,5 @@
 {application,firebase_admin,
-             [{description,"An OTP library"},
+             [{description,"Google firebase admin library"},
               {vsn,"0.1.0"},
               {registered,[]},
               {applications,[kernel,stdlib,jhn_stdlib]},
