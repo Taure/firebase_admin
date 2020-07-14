@@ -1,15 +1,9 @@
-{application, firebase_admin,
- [{description, "An OTP library"},
-  {vsn, "0.1.0"},
-  {registered, []},
-  {applications,
-   [kernel,
-    stdlib,
-    jhn_stdlib
-   ]},
-  {env,[]},
-  {modules, []},
-
-  {licenses, ["Apache 2.0"]},
-  {links, []}
- ]}.
+{application,firebase_admin,
+             [{description,"An OTP library"},
+              {vsn,"0.1.0"},
+              {registered,[]},
+              {applications,[kernel,stdlib,jhn_stdlib]},
+              {env,[]},
+              {modules,[]},
+              {licenses,["Apache 2.0"]},
+              {links,[]}]}.
