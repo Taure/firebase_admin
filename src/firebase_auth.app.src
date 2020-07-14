@@ -4,7 +4,8 @@
   {registered, []},
   {applications,
    [kernel,
-    stdlib
+    stdlib,
+    jhn_stdlib
    ]},
   {env,[]},
   {modules, []},
