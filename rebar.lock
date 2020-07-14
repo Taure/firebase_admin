@@ -1,0 +1,8 @@
+{"1.2.0",
+[{<<"jhn_stdlib">>,{pkg,<<"jhn_stdlib">>,<<"3.6.1">>},0}]}.
+[
+{pkg_hash,[
+ {<<"jhn_stdlib">>, <<"1D3A349FE45959EA747161B86E4B4D1957903F313416D72574B73D5F0F2C1DAF">>}]},
+{pkg_hash_ext,[
+ {<<"jhn_stdlib">>, <<"87BFBE01DE19D48877C87D00F52E34B37266C8C5C8D30F1F4612E6DDB0E6915F">>}]}
+].
