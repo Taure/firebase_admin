@@ -4,7 +4,7 @@
          service_account/2]).
 
 service_account_fcm(ServiceJson) ->
-    auth(ServiceJson, <<"https://www.googleapis.com/auth/firebase.messaging">>).
+    service_account(ServiceJson, <<"https://www.googleapis.com/auth/firebase.messaging">>).
 
 service_account(ServiceJson, Scope) ->
     #{<<"client_email">> := ISS,
