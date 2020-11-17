@@ -3,13 +3,12 @@
 -export([service_account_fcm/1,
          service_account/2]).
 
-service_account_fcm(ServiceJson) ->
-    service_account(ServiceJson, <<"https://www.googleapis.com/auth/firebase.messaging">>).
+service_account_fcm(ServiceAccountMap) ->
+    service_account(ServiceAccountMap, <<"https://www.googleapis.com/auth/firebase.messaging">>).
 
-service_account(ServiceJson, Scope) ->
-    #{<<"client_email">> := ISS,
-      <<"token_uri">> := AUD,
-      <<"private_key">> := PrivKey} = json:decode(ServiceJson, [maps]),
+service_account(#{<<"client_email">> := ISS,
+                  <<"token_uri">> := AUD,
+                  <<"private_key">> := PrivKey}, Scope) ->
     Time = os:system_time(seconds),
     Exp = Time + (30*60),
     Claims = #{<<"iss">> => ISS,
